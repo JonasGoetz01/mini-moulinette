@@ -146,6 +146,11 @@ int main(void)
             .input = "+-123",
             .expected = -123,
         },
+		{
+            .desc = "Convert string with different types of spaces",
+            .input = " \f\n\r\t\v +-123",
+            .expected = -123,
+        },
         {
             .desc = "Convert string with out of range chars",
             .input = "1 2 3 4 5 6 7 8 9 0 a b c d e f g h i j k l m n o p q r s t u v w x y z",
